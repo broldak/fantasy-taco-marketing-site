@@ -8,6 +8,7 @@ import {
   Group,
   Stack,
   Box,
+  Image,
 } from "@mantine/core";
 import Link from "next/link";
 import { useState } from "react";
@@ -56,8 +57,16 @@ export function Hero() {
         <Box w="100%" py="md">
           <Container size="xl" w="100%">
             <Group justify="space-between" h="100%">
-              <Group gap="8px">
-                <Box>🌮</Box>
+              <Group gap={12}>
+                <Box>
+                  <Image
+                    src="/bench_taco.png"
+                    alt="Fantasy Taco"
+                    width={32}
+                    height={32}
+                    fit="contain"
+                  />
+                </Box>
                 <Text size="xl" fw={700} c="white" py={2}>
                   Fantasy Taco
                 </Text>
@@ -68,12 +77,19 @@ export function Hero() {
         <Box w="100%" py="md" flex={1}>
           <Container size="xl" w="100%" h="100%">
             <Stack justify="center" align="center" gap="xl" h="100%">
+              <Image
+                src="/bench_taco.png"
+                alt="Fantasy Taco"
+                width={80}
+                height={80}
+                fit="contain"
+              />
               <Title order={1} size={52} fw={900} ta="center" c="white">
                 Welcome to Fantasy Taco
               </Title>
               <Text size="xl" maw={600} ta="center" c="gray.1">
                 Finally an answer to who makes the worst decisions in all of
-                your fantasy leagues. Hope it's not you.
+                your fantasy leagues. Hope it&apos;s not you.
               </Text>
               <Button
                 component={Link}
