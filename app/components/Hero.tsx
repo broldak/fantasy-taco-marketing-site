@@ -77,7 +77,7 @@ export function Hero() {
               </Text>
               <Button
                 component={Link}
-                href="https://fantasy-bench-tracker.fly.dev/"
+                href="https://app.tacobench.com"
                 size="lg"
                 color="teal"
                 variant="white"
