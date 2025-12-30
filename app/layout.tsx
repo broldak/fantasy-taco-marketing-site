@@ -10,14 +10,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fantasy Taco - Ultimate Fantasy Sports Platform",
+  title: "Taco Bench - Ultimate Fantasy Sports Platform",
   description:
     "Experience the future of fantasy sports with our innovative platform. Join thousands of players competing for the ultimate championship.",
   icons: {
     icon: "/bench_taco.png",
   },
   openGraph: {
-    title: "Fantasy Taco - Ultimate Fantasy Sports Platform",
+    title: "Taco Bench - Ultimate Fantasy Sports Platform",
     description:
       "Experience the future of fantasy sports with our innovative platform. Join thousands of players competing for the ultimate championship.",
     url: "https://fantasytaco.com",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fantasy Taco - Ultimate Fantasy Sports Platform",
+    title: "Taco Bench - Ultimate Fantasy Sports Platform",
     description:
       "Experience the future of fantasy sports with our innovative platform. Join thousands of players competing for the ultimate championship.",
     images: "/preview.png",

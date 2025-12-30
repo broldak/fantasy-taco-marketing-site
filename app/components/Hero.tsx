@@ -11,38 +11,8 @@ import {
   Image,
 } from "@mantine/core";
 import Link from "next/link";
-import { useState } from "react";
-import { useDisclosure } from "@mantine/hooks";
-
-const links = [
-  { link: "#features", label: "Features" },
-  { link: "mailto:contact@fantasytaco.com", label: "Contact" },
-];
 
 export function Hero() {
-  const [opened, { toggle, close }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
-
-  const items = links.map((link) => (
-    <Button
-      component={Link}
-      key={link.label}
-      variant="transparent"
-      href={link.link}
-      onClick={() => {
-        setActive(link.link);
-        close();
-      }}
-      c={opened ? "gray.7" : "white"}
-      style={{
-        borderBottom: active === link.link ? "2px solid white" : "none",
-      }}
-      bdrs="0"
-    >
-      {link.label}
-    </Button>
-  ));
-
   return (
     <Box
       h="100vh"
@@ -61,14 +31,14 @@ export function Hero() {
                 <Box>
                   <Image
                     src="/bench_taco.png"
-                    alt="Fantasy Taco"
+                    alt="Taco Bench"
                     width={32}
                     height={32}
                     fit="contain"
                   />
                 </Box>
                 <Text size="xl" fw={700} c="white" py={2}>
-                  Fantasy Taco
+                  Taco Bench
                 </Text>
               </Group>
             </Group>
@@ -79,13 +49,13 @@ export function Hero() {
             <Stack justify="center" align="center" gap="xl" h="100%">
               <Image
                 src="/bench_taco.png"
-                alt="Fantasy Taco"
+                alt="Taco Bench"
                 width={80}
                 height={80}
                 fit="contain"
               />
               <Title order={1} size={52} fw={900} ta="center" c="white">
-                Welcome to Fantasy Taco
+                Welcome to Taco Bench
               </Title>
               <Text size="xl" maw={600} ta="center" c="gray.1">
                 Finally an answer to who makes the worst decisions in all of
