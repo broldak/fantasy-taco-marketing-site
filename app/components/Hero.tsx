@@ -9,15 +9,17 @@ import {
   Stack,
   Box,
   Image,
+  Flex,
 } from "@mantine/core";
 import Link from "next/link";
+import styles from "@/app/nav.module.css";
 
 export function Hero() {
   return (
     <Box
       h="100vh"
       pt={10}
-      pb={40}
+      pb={10}
       bg={
         "linear-gradient(135deg,var(--mantine-color-teal-5),var(--mantine-color-teal-8))"
       }
@@ -72,6 +74,20 @@ export function Hero() {
               </Button>
             </Stack>
           </Container>
+        </Box>
+        <Box w="100%" py="md">
+          <Flex justify="center" align="center" gap="md">
+            <Link href="/privacy" className={styles.link}>
+              <Text c="white" fw={600} size="sm">
+                Privacy Policy
+              </Text>
+            </Link>
+            <Link href="/terms" className={styles.link}>
+              <Text c="white" fw={600} size="sm">
+                Terms of Service
+              </Text>
+            </Link>
+          </Flex>
         </Box>
       </Stack>
     </Box>
