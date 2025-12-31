@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Privacy() {
   return (
     <main>
-      <Stack h="100vh" w="100%" gap="0" bg="gray.0">
+      <Stack mih="100vh" w="100%" gap="0" bg="gray.0">
         <Box
           bg={
             "linear-gradient(135deg,var(--mantine-color-teal-5),var(--mantine-color-teal-8))"
